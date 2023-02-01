@@ -11,12 +11,9 @@
 
   body{
     font-family: 'Montserrat', sans-serif;
-font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.7;
-  }
-
-/* ************pseudo element */
- 
+  } 
 
 .main-container{
   
@@ -27,13 +24,13 @@ font-family: 'Poppins', sans-serif;
 
 .main-container .container1{
  width: 50%;
- 
+ border: 2px solid green;
 }
 
 .main-container .container2{
-   
     width: 50%;
     padding: 25rem 15rem;
+    border: 2px solid blue;
 }
 .main-container .container2 h1{
     font-size: 50px;
@@ -46,14 +43,15 @@ font-family: 'Poppins', sans-serif;
 }
 
 .btn{
-    padding: 10px 18px;
+    padding: 15px 15px;
     border-radius: 50%;
     margin: 8px 8px;
     background: var(--color);
     cursor: pointer;
+    border: none;
 }
 .btn1{
- --color:#2a3236;
+ --color:#242424;
 }
 
 .btn2{
@@ -61,11 +59,11 @@ font-family: 'Poppins', sans-serif;
    }
 
    .btn3{
-    --color:#172233;
+    --color:#4c515a;
    }
 
    .btn4{
-    --color:#a1165e;
+    --color:#e71984;
    }
 
    .btn5{
@@ -94,23 +92,77 @@ font-family: 'Poppins', sans-serif;
    }
 
    .container2 .img{
-    padding: 1.5rem 16rem;
+    padding-top: 1rem;
+    width: 450px;
+    height: 40px;
     margin-top: 1rem;
     text-transform: uppercase;
-    font-size:18px;
+    font-size:20px;
     background-color: #3bc1ed;
     color: #f0fbff;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   
+
+   .icon{
+    padding-right: 100px;
+    padding-left: 10px;
+    color:white;
+   
    }
 
-   .container2 i{
-    color: #f0fbff;
+   .container1 .rotate-image{
+      height: 84.708px;
+      width: 161.778px;
+     margin-top: 35rem;
+     margin-left: 35rem;
+     
+   }
+    .rotate-image{
+      display: none;
+    }
+   .colorRed{
+    /* stroke: #c9144e; */
+     fill: #3bc1ed;
    }
 
-   .container1 img{
-      height: 55%;
-      width: 55%;
-     margin-top: 22rem;
-     margin-left: 20rem;
+   .uploadicon{
+    fill: white;
+   }
+   .container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   #containerImage{
+    height: 60%;
+    width: 60%;
+   }
+
+   #logo{
+    position: relative;
+    top: 200px;
+    right: 280px;
+   }
+   #uplogo{
+      display: none;
+   }
+  .uploadicon{
+    fill: white;
+  }
+   .file-input {
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+  }
   
-   }
+  .icon-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+  }
